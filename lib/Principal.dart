@@ -60,9 +60,18 @@ class _HomePrincipalState extends State<HomePrincipal> {
       body:
         Center(
           child: Container(
-            decoration: BoxDecoration(border: Border.all()),
             height: 200.0,
             width: 200.0,
+            child: RaisedButton(
+              onPressed: () {
+                Scaffold.of(context).showSnackBar(SnackBar(
+                  content: Text("HELLO!"),
+                ));
+              },
+              child: Text("HOLA"),
+              color: Colors.redAccent,
+              textColor: Colors.white,
+            ),
           ),
         ), // This trailing comma makes auto-formatting nicer for build methods.
     );
