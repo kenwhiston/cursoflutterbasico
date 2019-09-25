@@ -64,25 +64,25 @@ class _HomePrincipalState extends State<HomePrincipal> {
               height: 200.0,
               width: 200.0,
               child:
-              Column(
+              Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
-                    Container(
-                      height: 20.0,
-                      width: 20.0,
-                      color: Colors.red,
-                    ),
-                    Container(
+                  Container(
+                    height: 20.0,
+                    width: 20.0,
+                    color: Colors.red,
+                  ),
+                  Container(
                       height: 20.0,
                       width: 20.0,
                       color: Colors.green,
-                    ),
-                    Container(
-                      height: 20.0,
-                      width: 20.0,
-                      color: Colors.yellow,
-                    ),
+                  ),
+                  Container(
+                    height: 20.0,
+                    width: 20.0,
+                    color: Colors.yellow,
+                  ),
                 ],
               ),
             ),
