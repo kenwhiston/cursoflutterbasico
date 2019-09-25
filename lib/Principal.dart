@@ -63,15 +63,27 @@ class _HomePrincipalState extends State<HomePrincipal> {
             child: Container(
               height: 200.0,
               width: 200.0,
-              child: RaisedButton(
-                onPressed: () {
-                  Scaffold.of(context).showSnackBar(SnackBar(
-                    content: Text("HELLO!"),
-                  ));
-                },
-                child: Text("HOLA"),
-                color: Colors.redAccent,
-                textColor: Colors.white,
+              child:
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                    Container(
+                      height: 20.0,
+                      width: 20.0,
+                      color: Colors.red,
+                    ),
+                    Container(
+                      height: 20.0,
+                      width: 20.0,
+                      color: Colors.green,
+                    ),
+                    Container(
+                      height: 20.0,
+                      width: 20.0,
+                      color: Colors.yellow,
+                    ),
+                ],
               ),
             ),
           );
